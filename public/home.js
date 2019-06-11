@@ -13,14 +13,14 @@ window.onload=function() {
 	var PFolioLink=document.getElementById("PFolioLink");
 
 
-	if (window.location.href=="file:///C:/Users/aryan/Desktop/CODING/HTML_SCRIPTS/Website_samples/YehudadevirDotCom/page2.html") {
+	if (window.location.href=="./mywork.html") {
 		ShopLink.style.color="red";
 		HomeLink.style.color="black";
 		BioLink.style.color="black";
 		ContactLink.style.color="black";
 		PFolioLink.style.color="black";
 
-	} else if (window.location.href=="file:///C:/Users/aryan/Desktop/CODING/HTML_SCRIPTS/Website_samples/YehudadevirDotCom/home.html") {
+	} else if (window.location.href=="./index.html") {
 		// alert(window.location.href);
 		ShopLink.style.color="black";
 		HomeLink.style.color="red";
