@@ -1,0 +1,380 @@
+* {
+		box-sizing: border-box;
+		margin : 0;
+		font-family:Arial,Helvetica,sans-serif;
+		padding: 0;
+	}
+
+	#StartBar {
+		background: black;
+		width: 100%;
+
+	}
+	#StartBar ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height:8vh;
+	}
+
+	#StartBar ul li {
+		float: left;
+		text-align: center;
+		color: white;
+		letter-spacing: 2px;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	#MainCont {
+		display: grid;
+		grid-template-rows: 15vh 25vh 60vh 5vh 5vh;
+		grid-gap: 5vh;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		/* border : 1px solid blue; */
+		width: 100%;
+		cursor: pointer;
+		height: 110vh;
+	}
+
+	#header  {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h1 {
+		text-align: center;
+		line-height: 0.1vw;
+		margin-top: 40px;
+		font-size:5vw;
+		letter-spacing: -0.5vw;
+		font-weight: 900;
+		color: black;
+	}
+
+	#header h3 {
+		text-align: center;
+		line-height: 0.1vw;
+		font-weight: lighter;
+		color: black;
+		font-size: 2vw;
+		letter-spacing: 1vw;
+		padding-left: 30px;
+	
+
+	}
+
+	#navbar {
+
+		/* border : 1px solid red; */
+		/* OVERFLOW PROPERTY WORKS ONLY WITH DISPLAY BLOCK ELEMENTS */
+		overflow: auto;
+	
+	}
+
+	#navbarInner {
+		height: 25vh;
+				display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	 #HomeDrpDwn,  #ShopListDrpDwn, #PortfolioDrpDwn, #BioDrpDwn,  #ContactDrpDwn {
+		margin:0;
+		/*border : 1px solid red;*/
+		width: 15vw;
+		overflow: auto;
+		display: block;
+		z-index: 1;
+	}
+
+
+	 #ShopListDrpDwn ul,  #PortfolioDrpDwn ul,  #HomeDrpDwn ul, #BioDrpDwn ul, 
+	 #ContactDrpDwn ul{
+		list-style-type: none;
+		margin : 0;
+		padding: 0;
+
+	}
+
+	  #ShopListDrpDwn ul li,  #PortfolioDrpDwn ul li, #HomeDrpDwn ul li, #BioDrpDwn ul li, #ContactDrpDwn ul li {
+		display: block;
+		background: white;
+	}
+
+	  #ShopListDrpDwn  ul li a, #PortfolioDrpDwn  ul li a, #HomeDrpDwn  ul li a, 
+	  #BioDrpDwn  ul li a, #ContactDrpDwn  ul li a {
+		text-decoration: none;
+		color:white;
+		display: block;
+		font-size: 15px;
+		text-align: center;
+		background: black;
+	}
+
+
+	#ShopListDrpDwn ul li:nth-child(2) a, #ShopListDrpDwn ul li:nth-child(3) a,#ShopListDrpDwn ul li:nth-child(4) a,#ShopListDrpDwn ul li:nth-child(5) a,#ShopListDrpDwn ul li:nth-child(6) a {
+		display: none;
+	}
+
+	#PortfolioDrpDwn ul li:nth-child(2) a, #PortfolioDrpDwn ul li:nth-child(3) a,#PortfolioDrpDwn ul li:nth-child(4) a,#PortfolioDrpDwn ul li:nth-child(5) a,#PortfolioDrpDwn ul li:nth-child(6) a, #PortfolioDrpDwn ul li:nth-child(7) a,#PortfolioDrpDwn ul li:nth-child(8) a, #PortfolioDrpDwn ul li:nth-child(9) a  {
+		display: none;
+	}
+
+	#PortfolioDrpDwn  ul li a:hover, #ShopListDrpDwn  ul li a:hover,  #BioDrpDwn  ul li a:hover, #ContactDrpDwn  ul li a:hover {
+		color: red;	}
+
+	#HomeLink:hover, #ShopLink:hover, #PFolioLink:hover {
+		color: red;
+	}
+
+	#HomeImg {
+
+		/* border : 1px solid black; */
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 30vh;
+		left: 30%;
+	}
+	#HomeImg img {
+		height: 40vh;
+	}
+
+
+	#HomeImg a {
+		text-decoration: none;
+		font-size: 20px;
+		padding: 5px 30px;
+		border: 2px solid black;
+		color: black;
+
+		margin-bottom: 5px;
+		font-weight: bold;
+		width: 130px;
+	}
+
+
+	#HomeImg a:hover {
+		background: red;
+	}
+
+	#HomeImg img {
+		width: 42%;
+		height: 60vh;
+		/*border : 1px solid black;*/
+		object-fit: cover;
+
+	}
+
+	#Footer_icon {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		position: absolute;
+		top:95vh;
+		/* display: block; */
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.fa-instagram:hover, .fa-behance:hover, .fa-envelope:hover, .fa-phone:hover {
+		background: red;
+		transform: rotate(45deg);
+	}
+
+	i.fab, i.far, i.fas {
+		border-radius: 20px;
+		background: black;
+		color: white;
+		padding: 10px;
+	}
+
+	i.fab {
+		font-size: 1.5vw;
+	}
+
+	#Footer_icon div > span {
+		margin: 30px;
+		width: 5vw;
+		height: 5vh;
+	}
+
+	
+
+	#Footer {
+
+		position: absolute;
+		top:105vh;
+		left: 0%;
+		background: black;
+				text-align: center;
+		color: white;
+		letter-spacing: 2px;
+		width: 100%;
+		font-size: 18px;
+		padding: 7px;
+		font-weight: normal;
+			display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	
+	
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+	@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
+		main {
+			display: grid;
+			grid-template-rows: 0.05fr 0.6fr;
+			grid-gap: 0vh;
+			height: 200vh;
+			border: 1px solid red;
+
+
+
+		}
+
+#MainCont {
+		overflow: hidden;
+		display: grid;
+		grid-template-rows: 20vh 20vh 100vh 10vh 10vh;
+		grid-gap: 5vh;
+		grid-template-columns: 1fr;
+		height: 100%;
+		position: relative;
+
+
+
+
+
+	}
+
+		#StartBar {width: 160vw;}
+
+
+		#StartBar ul li {
+			font-size: 2.5em;
+			letter-spacing: 1px;
+		}
+
+
+			#navbarInner {
+				display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+							
+
+	}
+
+
+	
+
+	
+
+		#header h1 {
+			font-size: 8em;
+			line-height: 4vw;
+		}
+
+		#header h3 {
+			font-size: 4em;
+			letter-spacing: 2.5vw;
+			line-height: 4vw;
+			font-weight: 400;
+		}
+
+		#StartBar p {
+			font-size: 4vw;
+			padding: 20px;
+		}
+
+		
+
+		#ShopListDrpDwn  ul li a,#PortfolioDrpDwn  ul li a,#HomeDrpDwn  ul li a, 
+	  	#BioDrpDwn  ul li a, #ContactDrpDwn  ul li a {
+		font-size: 2.5em;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		}
+
+		#HomeDrpDwn,  #ShopListDrpDwn, #PortfolioDrpDwn, #BioDrpDwn,  #ContactDrpDwn {
+			width: 20%;
+		}
+
+		#ShopListDrpDwn  ul li a, #PortfolioDrpDwn  ul li a, #HomeDrpDwn  ul li a, 
+		 #BioDrpDwn  ul li a, #ContactDrpDwn  ul li a {
+		  		padding-bottom: 5px;
+		  		margin: 0px;
+		  }
+
+		#HomeImg {
+            width: 160vw;
+			border: 1px solid black;
+			position: absolute;
+			top: 30vh;
+			left: 0%;
+		}
+
+
+		#HomeImg a {
+			font-size: 30px;
+			text-align: center;
+
+		}
+
+		#HomeImg img {
+			width: 100vw;
+			height: 100vh;	
+		}
+
+		#Footer_icon {
+			position: absolute;
+			top: 135vh;
+			left: 0%;
+
+			
+			
+		}
+
+		
+		#Footer_icon > div {
+			position: static;
+			border: 1px solid red;
+		}
+	
+		i.fab, i.fas, i.far {
+		font-size: 6vw;
+	}
+			#Footer {
+				position: absolute;
+				top: 145vh;
+
+				height:8vh;
+
+			}
+	
+
+		#Footer p {
+			font-size: 3vw;
+
+		}
+	
+	
+
+
+	}
+		
