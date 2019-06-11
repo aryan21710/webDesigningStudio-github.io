@@ -20,7 +20,7 @@ window.onload=function() {
 		ContactLink.style.color="black";
 		PFolioLink.style.color="black";
 
-	} else if (window.location.href=="./index.html") {
+	} else if (window.location.href=="./../index.html") {
 		// alert(window.location.href);
 		ShopLink.style.color="black";
 		HomeLink.style.color="red";
